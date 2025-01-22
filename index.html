@@ -3,117 +3,522 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Faseed - Flutter Developer Resume</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DSA in CPP</title>
     <style>
         body {
-            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+        .program-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        .program-box:hover {
+            transform: scale(1.05);
+            background-color: #e0e0e0;
         }
     </style>
 </head>
-<body class="font-sans">
-    <div class="max-w-4xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg">
-        <div class="text-center mb-6">
-            <h1 class="text-3xl font-bold">Mohamed Faseed</h1>
-            <p class="text-lg text-gray-600">Flutter Developer | JavaScript Enthusiast | Tech Learner</p>
-        </div>
-
-        
-        <div class="mb-8">
-            <h2 class="text-xl font-semibold text-blue-600 border-b-2 border-blue-600 inline-block mb-4">Professional Summary</h2>
-            <p class="text-gray-700">I’m a motivated developer with hands-on experience in JavaScript, React, and Firebase. I’m really passionate about building mobile apps that are simple and enjoyable to use. Although I’m still learning Flutter, I’m confident in my ability to pick up new technologies quickly and focus on creating solutions that work efficiently and can grow with the users' needs.
-
-            </p>
-        </div>
-
-        <div class="mb-8">
-            <h2 class="text-xl font-semibold text-blue-600 border-b-2 border-blue-600 inline-block mb-4">Skills</h2>
-            <div class="flex flex-wrap gap-2">
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Dart</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Flutter</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">JavaScript</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">React.js</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Node.js</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Firebase</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Git</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Tailwind CSS</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Problem-Solving</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Machine Learning (Ongoing)</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Prompt Engineering</span>
-            </div>
-        </div>
-
-        <div class="mb-8">
-            <h2 class="text-xl font-semibold text-blue-600 border-b-2 border-blue-600 inline-block mb-4">Projects</h2>
-            <ul class="list-none space-y-4">
-                <li class="bg-gray-100 p-4 rounded-lg shadow">
-                    <strong>Real-Time Chat App:</strong> Built a React.js chat application integrated with Firebase for real-time communication
-                </li>
-                <li class="bg-gray-100 p-4 rounded-lg shadow">
-                    <strong>Personal Finance Tracker (Ongoing):</strong> Designing a Flutter app for tracking personal finances and budgets, focused on integrating Firebase for secure data storage.
-                </li>
-            </ul>
-        </div>
-
-        <div class="mb-8">
-            <h2 class="text-xl font-semibold text-blue-600 border-b-2 border-blue-600 inline-block mb-4">Work Experience</h2>
-            <ul class="list-none space-y-4">
-                <li class="bg-gray-100 p-4 rounded-lg shadow">
-                    <strong>React.js Developer</strong> - Freelance | ENDED <br>
-                    - Built and deployed scalable web applications for <a style="color: blue;" href="https://codehuboffl.github.io/">codehub team</a>.<br>
-                    - Enhanced performance by optimizing front-end code.
-                </li>
-                <li class="bg-gray-100 p-4 rounded-lg shadow">
-                    <strong>working for startup </strong> - codehub Solutions | ongoing <br>
-                    - Contributed to full-stack development and debugging.<br>
-                    - Documented processes for team knowledge sharing.
-                </li>
-            </ul>
-        </div>
-
-        <div class="mb-8">
-            <h2 class="text-xl font-semibold text-blue-600 border-b-2 border-blue-600 inline-block mb-4">What I Can Do for You</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-gray-100 p-4 rounded-lg shadow">
-                    <h3 class="font-semibold text-lg">Custom Mobile Applications</h3>
-                    <p class="text-gray-700">Design and develop user-friendly, scalable mobile apps tailored to your business needs.</p>
-                </div>
-                <div class="bg-gray-100 p-4 rounded-lg shadow">
-                    <h3 class="font-semibold text-lg">Real-Time Chat Systems</h3>
-                    <p class="text-gray-700">Build robust real-time communication systems with Firebase integration.</p>
-                </div>
-                <div class="bg-gray-100 p-4 rounded-lg shadow">
-                    <h3 class="font-semibold text-lg">Responsive Web Interfaces</h3>
-                    <p class="text-gray-700">Create intuitive and responsive web interfaces using React and Tailwind CSS.</p>
-                </div>
-                <div class="bg-gray-100 p-4 rounded-lg shadow">
-                    <h3 class="font-semibold text-lg">Cross-Platform Solutions</h3>
-                    <p class="text-gray-700">Develop cross-platform applications ensuring seamless performance across devices.</p>
-                </div>
-            </div>
-        </div>
-        <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <div class="mb-8">
-            <h2 class="text-xl font-semibold text-blue-600 border-b-2 border-blue-600 inline-block mb-4">Contact Information</h2>
-            <ul class="list-none space-y-2">
-                <li class="hover:text-blue-700 transition-colors">
-                    <i class="fas fa-envelope"></i> Email: 
-                    <a href="mailto:faseedmohamed6@gmail.com" class="text-blue-500 hover:text-blue-700">faseedmohamed6@gmail.com</a>
-                </li>
-                <li>Phone: <span class="text-blue-600">available upon request</span></li>
-                <li>LinkedIn: <span class="text-blue-500">available upon request</span></a></li>
-                <li>Portfolio: <a href="https://mrfaseed.github.io" target="_blank" class="text-blue-500">GITHUB</a></li>
-            </ul>
-        </div>
+<body>
+    <h1>DSA in CPP</h1>
+    <div class="container">
+        <div class="program-box" onclick="copyText('Exchange Sort')">Exchange Sort</div>
+        <div class="program-box" onclick="copyText('Selection Sort')">Selection Sort</div>
+        <div class="program-box" onclick="copyText('Insertion Sort')">Insertion Sort</div>
+        <div class="program-box" onclick="copyText('Stack Operator')">Stack Operator</div>
+        <div class="program-box" onclick="copyText('Binary Search')">Binary Search</div>
+        <div class="program-box" onclick="copyText('Linear Search')">Linear Search</div>
+        <div class="program-box" onclick="copyText('Infix to Postfix')">Infix to Postfix</div>
+        <div class="program-box" onclick="copyText('Stack using Linked List')">Stack using Linked List</div>
     </div>
-    <footer class="text-center mt-8 text-gray-600 py-4">
-        <p>&copy; <span id="year"></span> Mohamed Faseed. All rights reserved.</p>
-    </footer>
+
+    <script>
+        const programCodes = {
+            'Exchange Sort': `#include <iostream>
+using namespace std;
+
+void exchangeSort(int arr[], int n) {
+    for(int i = 0; i < n-1; i++) {
+        for(int j = i+1; j < n; j++) {
+            if(arr[i] > arr[j]) {
+                // Swap elements
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
     
-        </div>
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
+    int arr[n];
+    cout << "Enter " << n << " elements: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
     
+    cout << "Original array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    
+    exchangeSort(arr, n);
+    
+    cout << "\\nSorted array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    
+    return 0;
+}`,
+
+            'Selection Sort': `#include <iostream>
+using namespace std;
+
+void selectionSort(int arr[], int n) {
+    for(int i = 0; i < n-1; i++) {
+        int min_idx = i;
+        for(int j = i+1; j < n; j++) {
+            if(arr[j] < arr[min_idx]) {
+                min_idx = j;
+            }
+        }
+        // Swap elements
+        int temp = arr[min_idx];
+        arr[min_idx] = arr[i];
+        arr[i] = temp;
+    }
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    
+    int arr[n];
+    cout << "Enter " << n << " elements: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    
+    cout << "Original array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    
+    selectionSort(arr, n);
+    
+    cout << "\\nSorted array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    
+    return 0;
+}`,
+
+            'Insertion Sort': `#include <iostream>
+using namespace std;
+
+void insertionSort(int arr[], int n) {
+    for(int i = 1; i < n; i++) {
+        int key = arr[i];
+        int j = i - 1;
+        
+        while(j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    
+    int arr[n];
+    cout << "Enter " << n << " elements: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    
+    cout << "Original array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    
+    insertionSort(arr, n);
+    
+    cout << "\\nSorted array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    
+    return 0;
+}`,
+
+            'Stack Operator': `#include <iostream>
+using namespace std;
+
+#define MAX 100
+
+class Stack {
+    private:
+        int top;
+        int arr[MAX];
+    
+    public:
+        Stack() { top = -1; }
+        
+        bool push(int x) {
+            if (top >= MAX-1) {
+                cout << "Stack Overflow\\n";
+                return false;
+            }
+            arr[++top] = x;
+            cout << x << " pushed into stack\\n";
+            return true;
+        }
+        
+        int pop() {
+            if (top < 0) {
+                cout << "Stack Underflow\\n";
+                return 0;
+            }
+            return arr[top--];
+        }
+        
+        int peek() {
+            if (top < 0) {
+                cout << "Stack is Empty\\n";
+                return 0;
+            }
+            return arr[top];
+        }
+        
+        bool isEmpty() {
+            return (top < 0);
+        }
+};
+
+int main() {
+    Stack s;
+    int choice, value;
+    
+    do {
+        cout << "\\n1. Push\\n2. Pop\\n3. Peek\\n4. Check Empty\\n5. Exit\\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+        
+        switch(choice) {
+            case 1:
+                cout << "Enter value to push: ";
+                cin >> value;
+                s.push(value);
+                break;
+                
+            case 2:
+                value = s.pop();
+                if(value != 0)
+                    cout << "Popped value: " << value << "\\n";
+                break;
+                
+            case 3:
+                value = s.peek();
+                if(value != 0)
+                    cout << "Top value: " << value << "\\n";
+                break;
+                
+            case 4:
+                if(s.isEmpty())
+                    cout << "Stack is empty\\n";
+                else
+                    cout << "Stack is not empty\\n";
+                break;
+        }
+    } while(choice != 5);
+    
+    return 0;
+}`,
+
+            'Binary Search': `#include <iostream>
+using namespace std;
+
+int binarySearch(int arr[], int left, int right, int x) {
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        
+        if (arr[mid] == x)
+            return mid;
+            
+        if (arr[mid] < x)
+            left = mid + 1;
+            
+        else
+            right = mid - 1;
+    }
+    return -1;
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    
+    int arr[n];
+    cout << "Enter " << n << " sorted elements: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    
+    int x;
+    cout << "Enter the element to search: ";
+    cin >> x;
+    
+    int result = binarySearch(arr, 0, n-1, x);
+    
+    if(result == -1)
+        cout << "Element not found";
+    else
+        cout << "Element found at index " << result;
+        
+    return 0;
+}`,
+
+            'Linear Search': `#include <iostream>
+using namespace std;
+
+int linearSearch(int arr[], int n, int x) {
+    for(int i = 0; i < n; i++) {
+        if(arr[i] == x)
+            return i;
+    }
+    return -1;
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    
+    int arr[n];
+    cout << "Enter " << n << " elements: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    
+    int x;
+    cout << "Enter the element to search: ";
+    cin >> x;
+    
+    int result = linearSearch(arr, n, x);
+    
+    if(result == -1)
+        cout << "Element not found";
+    else
+        cout << "Element found at index " << result;
+        
+    return 0;
+}`,
+
+            'Infix to Postfix': `#include <iostream>
+#include <stack>
+#include <string>
+using namespace std;
+
+int precedence(char op) {
+    if(op == '^')
+        return 3;
+    if(op == '*' || op == '/')
+        return 2;
+    if(op == '+' || op == '-')
+        return 1;
+    return -1;
+}
+
+string infixToPostfix(string infix) {
+    stack<char> st;
+    string postfix;
+    
+    for(int i = 0; i < infix.length(); i++) {
+        char c = infix[i];
+        
+        if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
+            postfix += c;
+            
+        else if(c == '(')
+            st.push('(');
+            
+        else if(c == ')') {
+            while(!st.empty() && st.top() != '(') {
+                postfix += st.top();
+                st.pop();
+            }
+            st.pop();
+        }
+        
+        else {
+            while(!st.empty() && precedence(c) <= precedence(st.top())) {
+                postfix += st.top();
+                st.pop();
+            }
+            st.push(c);
+        }
+    }
+    
+    while(!st.empty()) {
+        postfix += st.top();
+        st.pop();
+    }
+    
+    return postfix;
+}
+
+int main() {
+    string infix;
+    cout << "Enter infix expression: ";
+    cin >> infix;
+    
+    cout << "Postfix expression: " << infixToPostfix(infix);
+    return 0;
+}`,
+
+            'Stack using Linked List': `#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+};
+
+class Stack {
+    private:
+        Node* top;
+    
+    public:
+        Stack() {
+            top = NULL;
+        }
+        
+        void push(int x) {
+            Node* temp = new Node();
+            temp->data = x;
+            temp->next = top;
+            top = temp;
+            cout << x << " pushed to stack\\n";
+        }
+        
+        bool isEmpty() {
+            return top == NULL;
+        }
+        
+        int peek() {
+            if(isEmpty()) {
+                cout << "Stack is empty\\n";
+                return -1;
+            }
+            return top->data;
+        }
+        
+        void pop() {
+            if(isEmpty()) {
+                cout << "Stack Underflow\\n";
+                return;
+            }
+            Node* temp = top;
+            top = top->next;
+            cout << temp->data << " popped from stack\\n";
+            delete temp;
+        }
+        
+        void display() {
+            if(isEmpty()) {
+                cout << "Stack is empty\\n";
+                return;
+            }
+            Node* temp = top;
+            while(temp != NULL) {
+                cout << temp->data << " ";
+                temp = temp->next;
+            }
+            cout << "\\n";
+        }
+};
+
+int main() {
+    Stack s;
+    int choice, value;
+    
+    do {
+        cout << "\\n1. Push\\n2. Pop\\n3. Peek\\n4. Display\\n5. Exit\\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+        
+        switch(choice) {
+            case 1:
+                cout << "Enter value to push: ";
+                cin >> value;
+                s.push(value);
+                break;
+                
+            case 2:
+                s.pop();
+                break;
+                
+            case 3:
+                value = s.peek();
+                if(value != -1)
+                    cout << "Top element: " << value << "\\n";
+                break;
+                
+            case 4:
+                s.display();
+                break;
+        }
+    } while(choice != 5);
+    
+    return 0;
+}`,
+        };
+
+        function copyText(programName) {
+            const codeToCopy = programCodes[programName] || programName;
+            navigator.clipboard.writeText(codeToCopy)
+                .then(() => {
+                    alert('Code copied to clipboard!');
+                })
+                .catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+        }
+    </script>
 </body>
 </html>
